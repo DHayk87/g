@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+.container {
+    max-width: 1340px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+nav {
+    padding: 20px 0;
+    background-color: #e7e7e7;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    vertical-align: middle;
+    font-style: italic;
+
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 30px;
+}
+
+.nav-content ul {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+header {
+    min-height: 80vh;
+    background-image: url('../image/Hero.jpg');
+    background-size: cover;
+}
+
+.hero {
+    backdrop-filter: sepia(70%);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 70px;
+    text-shadow: 0 0 5px #e7e7e7;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin: auto;
+    font-size: 22px;
+    width: 70%;
+}
+
+
+.hero-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 40px;
+    background-color: #80B3FF;
+    color: #FFF;
+    box-shadow: 0 0 10px 5px #000;
+    word-spacing: 5px;
+}
+
+
+#secOne {
+    padding: 50px 0;
+}
+
+.tour-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.blog {
+    width: calc(60% - 20px);
+}
+
+.blog-right {
+    text-align: right;
+}
+
+.blog h2 {
+    margin-bottom: 25px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.blog p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.blog-cover {
+    width: calc(40% - 20px);
+}
+
+.price-btn {
+    display: inline-block;
+    color: #000;
+    background-color: #AED2FF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.price-btn:hover {
+    background-color: #95c9fb;
+}
+
+.galery {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* ********** */
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel img {
+    transition: .3s linear;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    background-color: #33333355;
+    width: 50px;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: #333333aa;
+    transition: .3s;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.price-header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+
+}
+
+.price-block {
+    width: calc(33% - 27px);
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    aspect-ratio: 3/4;
+
+}
+
+.price {
+    padding: 20px;
+    background-color: #AED2FF;
+    margin-right: -40px;
+    border-radius: 80px 0 0 80px;
+    font-size: 50px;
+}
+
+.info {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 14px;
+
+}
+
+.info li {
+    list-style-image: url('../image/tick.png');
+    line-height: 2;
+}
+
+.price-block button {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 40px;
+    background-color: #80B3FF;
+    color: #FFF;
+    box-shadow: 0 0 4px #000;
+    word-spacing: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 25px 0;
+}
+
+footer p {
+    display: inline-block;
+}
+
+footer a {
+    color: #fff;
+    float: right;
+}
+
+
+@media all and (max-width:1024px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media all and (max-width:925px) {
+    .prices {
+        justify-content: center;
+    }
+
+    .price-block {
+        width: calc(50% - 20px);
+    }
+
+    .price {
+        font-size: 40px;
+    }
+
+    .blog,
+    .blog-cover {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width:586px) {
+    .price-block {
+        width: 100%;
+    }
+
+    .nav-content ul {
+        display: none;
+    }
+
+    .nav-content {
+        justify-content: center;
+    }
+}
