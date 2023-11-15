@@ -224,6 +224,14 @@ header {
     font-size: 50px;
 }
 
+.five .price {
+    background-color: #95fbe0;
+}
+
+.seven .price {
+    background-color: #fbca95;
+}
+
 .info {
     text-align: left;
     margin-left: 10%;
@@ -246,6 +254,14 @@ header {
     word-spacing: 5px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.price-block button:hover {
+    background-color: #6ca7fe;
+}
+
+.price-block button:active {
+    background-color: #458fff;
 }
 
 
